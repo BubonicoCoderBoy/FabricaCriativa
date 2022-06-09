@@ -1,14 +1,6 @@
 
 let registros = []
 
-let h3 = document.createElement('h3')
-
-h3.innerText = 'YOoo'
-
-let pannel = document.getElementsByClassName('buttonContainer')[0]
-
-pannel.append(h3)
-
 function registrar(){
 
 	//Cria um dicionário(personagem)
