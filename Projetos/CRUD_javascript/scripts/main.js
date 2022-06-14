@@ -1,7 +1,13 @@
+// CRUD
+
+// Create
+// Read
+// Update
+// Deletar
 
 let registros = []
 
-function registrar(){
+function registrar(){ // Create
 
 	//Cria um dicionário(personagem)
 	var persona = {
@@ -15,62 +21,61 @@ function registrar(){
 
 }
 
-function mostrarRegistros(){
+function mostrarRegistros(){ // Read
+
+	console.clear()
 
 	//Percorrer toda a lista
 	//Mostrando todos os itens
 
 	// COMEÇO ; ENQUANTO ; INCREMENTO
-	for(let i = 0 ; i < registros.length ; i++){
+	for(let i = 0 ; i < registros.length ; i = i + 1){
 
-		// Não mostre os personagens nulos
 		if(registros[i] != null){
 
-			console.log('Nome do Personagem : ' + registros[i].nome)
-			console.log('Onde ele vive : ' + registros[i].local)
-			console.log('Gosto pessoal : ' + registros[i].gosto)
-			console.log('--------------------------------------')
+		console.log('ID : ' + i)
+		console.log('Nome do Personagem : ' + registros[i].nome)
+		console.log('Onde ele vive : ' + registros[i].local)
+		console.log('Gosto pessoal : ' + registros[i].gosto)
+		console.log('--------------------------------------')
 
-		}
-		
+		}	
 
 	}
 
 }
 
-function atualizarRegistro(){
+function atualizarRegistro(){ // Update
 
-	var index = prompt('Qual o indice do personagem que você quer alterar ?')
+	var index = prompt('Qual o indice do personagem que você quer alterar ?') // '3'
 
 	// Func recebe um valor e tenta converter em numero
-	index = parseInt(index)
+	index = parseInt(index) // 3
 
-	var carac = prompt('Qual caracteristica você quer alterar ?')
+	var carac = prompt('Qual caracteristica você quer alterar ?') // 'local'
 
-	var valor = prompt('Qual será o novo valor ?')
+	var valor = prompt('Qual será o novo valor ?') // 'Alto do Ipiranga'
 
 	//Alteração
 
+	// index -> numero
+	// carac -> local | nome | gosto
+	// valor -> Novo valor
+
 	registros[index][carac] = valor
 
-	console.log('Nome do Personagem : ' + registros[index].nome)
-	console.log('Onde ele vive : ' + registros[index].local)
-	console.log('Gosto pessoal : ' + registros[index].gosto)
-	console.log('--------------------------------------')
+	console.log('Atualizado com sucesso !')
 
 }
 
-function deletarRegistro(){
+function deletarRegistro(){ // Delete
 
-	var index = prompt('Qual o indice do personagem que você quer deletar ?')
+	var index = prompt('Qual o indice a ser deletado ?') // '3'
 
-	// Func recebe um valor e tenta converter em numero
-	index = parseInt(index)
-
-	//Deleção
+	index = parseInt(index) // 3
 
 	registros[index] = null
 
-	console.log('Personagem Deletado !')
+	console.log('Deletado com sucesso !')
 
 }
