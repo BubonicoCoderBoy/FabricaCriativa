@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	
+	<h1 id="title">Titulo</h1> <!-- innerText : 'Titulo' --->
+
+	<p>Paragrafo</p>
+
+	<ul>
+		
+		<li class="item"> Item </li>
+		<li class="item"> Item </li>
+		<li class="item"> Item </li>
+
+	</ul>
+
+	<script>
+
+		// Função document -> Pega elementos pelo ID
+			// Pega o elemento pelo ID ?
+			// Get Element By Id
+
+		// document.getElementById() -> Qual Id ?
+
+		// Documento pega o elemento pelo id "title"
+
+		let titulo = document.getElementById('title') // Retorna / Se transforma TAG
+			// Objeto(tipo de dado Objeto)
+			// TAG
+
+		titulo.innerText = 'Olá, eu sou o texto Interno'
+		// Inner -> Interno
+		// Texto -> Texto
+
+		titulo.style.backgroundColor = 'red'
+		titulo.style.padding = '30px'
+		titulo.style.color= 'white'
+
+		aparecer()
+
+		function sumir(){
+			titulo.style.display='none'
+		}
+
+		function aparecer(){
+			titulo.style.display='block'
+		}
+		
+		let titulo2 = {
+			innerText:'Titulo',
+			style:{
+				//propriedades:valor
+				//propriedades:valor
+				//propriedades:valor
+				//propriedades:valor
+				//propriedades:valor
+				//propriedades:valor
+			}
+
+		}
+
+	</script>
+
+	<button onclick="sumir()">Sumir</button>
+	<button onclick="aparecer()">Aparecer</button>
+
+</body>
+</html>

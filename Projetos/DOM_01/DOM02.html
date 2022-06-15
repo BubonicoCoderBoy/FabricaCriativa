@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		
+		<h1 class="item">Titulo</h1> 
+		<h1>Outro Titulo</h1> 
+
+		<div id="box1"> Me Encontre ! </div>
+
+		<div id="box2"></div>
+
+		<ul>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+		</ul>
+
+		<script>
+
+			let box = document.getElementById('box1')
+
+			// METODOS SELETORES
+				// Id(Tag na lata)
+				// Nome da Tag(coleção/array)
+				// Class(coleção/array)
+
+			// document get Element By Id -> Retorna Tag
+
+			// document get Elements By Tag Name -> Retornar "Coleção/Array" de Tags
+
+			let h1s = document.getElementsByTagName('h1')
+			let lis = document.getElementsByClassName('item')
+
+			console.log(h1s) 		// [ <h1> , <h1> ]
+			console.log(lis) 		// [ ... ]
+			console.log(box) 			// <div>
+
+			// let li
+
+		</script>
+
+	</body>
+</html>

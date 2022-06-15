@@ -4,8 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exemplo Parentesco</title>
+	<script>
+
+		let brasil = {
+			dd:55,
+			planeta:'Terra'
+		}
+
+		let cidade = {
+			nome:'Santo André',
+			estado:'SP',
+			pais:brasil
+		}
+		
+		let pessoa = {
+			nome:'Firmino',
+			rg:123123123123,
+			moradia:cidade
+		}
+
+		console.log(pessoa.moradia.pais.planeta)
+
+		let mamaeCanguru = {
+
+			nome:'Juliana, a mamãe Canguru',
+
+			especie:'Canguru',
+
+			filhote : {
+
+				nome:'Cleitinho, o filhote canguru',
+				especie:'Canguru'
+
+			}
+
+		}
+
+		console.log(mamaeCanguru.filhote.especie)
+
+	</script>
 </head>
 <body>
-	
+
 </body>
 </html>

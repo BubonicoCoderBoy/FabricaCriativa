@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		
+		<h1>Titulo</h1> 
+
+		<div id="box1"> Me Encontre ! </div>
+
+		<div id="box2"></div>
+
+		<ul>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+			<li class="item">Item</li>
+		</ul>
+
+		<script>
+
+			// Objetos
+				// Propriedades (Variaveis/Valor)
+				// Métodos (Função)
+
+			document.getElementById('box2') // Retorna TAG
+
+			// document.	Objeto que vai ativar a função
+			// get 			Pegar
+			// Element 		Elemento/Tag ( aberturaTag + conteudo + fechamenteTag )
+			// By 			Pelo
+			// Id 			Id
+
+			// .get Element By Id
+
+			let varBox = document.getElementById('box1') // retorna tag #box1
+			let varBox2 = document.getElementById('box2') // retorna tag #box2
+			
+			varBox.innerText = 'Eu sou a Box 1' // Texto Interno
+
+			varBox2.innerText = 'Eu sou a Box 2'
+
+
+			let mamaeCanguru = {
+				nome:'Juliana, a mamãe Canguru',
+				especie:'Canguru',
+				filhote : {
+					nome:'Cleitinho, o filhote canguru',
+					especie:'Canguru'
+				}
+			}
+
+			mamaeCanguru.nome = 'Jusiscreitan'
+
+			console.log(mamaeCanguru.nome)
+
+
+		</script>
+
+	</body>
+</html>
