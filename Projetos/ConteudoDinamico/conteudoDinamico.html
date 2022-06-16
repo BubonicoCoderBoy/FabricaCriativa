@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteudo Dinamico</title>
+	<link rel="stylesheet" href="estilo.css">
+	</head>
+
+	<body>
+
+		<div id='root'></div>
+		
+		<!-- Código invocado após a TAG Root, pois depende dela -->
+		<!-- para seu funcionamento -->
+		<script src="main.js"></script>
+
+		<nav>
+
+			<!-- Esses botões geram conteudo na div #root -->
+			<!-- Leia o código main.js para melhor entendimento -->
+
+			<button onclick="render(conteudoCharmander)">
+				Charmander
+			</button>
+
+			<button onclick="render(conteudoBulbassaur)">
+				Bulbassaur
+			</button>
+
+			<button onclick="render(conteudoSquirtle)">
+				Squirtle
+			</button>
+
+		</nav>
+
+	</body>
+
+</html>
