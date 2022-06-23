@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body,ul{
+			margin:0px;
+			padding:0px;
+		}
+		h1,div{
+			margin:0px;
+			width:200px;
+			border:1px solid;
+			text-align:center;
+		}
+		h1{
+			cursor:pointer;
+		}
+		div{
+			padding:0px;
+			border:none;
+			background-color:tomato;
+
+			overflow:hidden;
+
+			transition-property: height;
+			transition-duration: 0.3s;
+
+			/*
+
+			0px
+			120px
+
+			0px
+			1px
+			2px
+			3px
+			4px
+			...
+			120px
+
+			*/
+
+		}
+	</style>
+</head>
+<body>
+	
+	<h1 id="titulo"> Menu </h1>
+	<div id="menu">
+		<ul>
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+			<li>Menu 4</li>
+			<li>Menu 5</li>
+		</ul>
+	</div>
+
+	<script>
+
+		// Puxei as Tags
+		let div = document.getElementById('menu')
+		let h1 = document.getElementById('titulo')
+
+		// Esconder o menu
+		// div.style.display = 'none'
+		div.style.height = '0px'
+		
+		// Adicionei um event listener
+		h1.addEventListener('click',clicaTitulo2)
+
+		// Função disparada pelo evento
+		function clicaTitulo(){	
+
+			if(div.style.display == 'none'){
+
+				div.style.display = 'block'
+
+			} else {
+
+				div.style.display = 'none'
+
+			}
+		}
+
+		function clicaTitulo2(){	
+
+			if(div.style.height == '0px'){
+
+				div.style.height = '120px'
+
+			} else {
+
+				div.style.height = '0px'
+
+			}
+		}		
+
+	</script>
+	
+</body>
+</html>

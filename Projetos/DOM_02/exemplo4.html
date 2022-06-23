@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body,ul{
+			margin:0px;
+			padding:0px;
+		}
+		h1,#menu{
+			margin:0px;
+			width:150px;
+			text-align:center;
+		}
+		h1{
+			background-color:lightgrey;
+			cursor:pointer;
+			font-size: 20px;
+			padding:5px;
+		}
+		#menu{
+			width:160px;
+			border:none;
+			background-color:lightgrey;
+
+			overflow:hidden;
+
+			transition-property: height;
+			transition-duration: 0.3s;
+
+
+		}
+		#txt{
+			background-color:lightgrey;
+			position: relative;
+			bottom:0px;
+
+			transition-property:bottom;
+			transition-duration:0.3s;
+		}
+	</style>
+
+<!-- 	<script>
+		
+		window.onload = function(){
+
+			// Puxei as Tags
+			let div = document.getElementById('menu')
+			let h1 = document.getElementById('titulo')
+			let txtH1 = document.getElementById('txt')
+
+			// Esconder o menu
+			// div.style.display = 'none'
+			div.style.height = '0px'
+			txtH1.style.bottom = '0px'
+			txtH1.style.backgroundColor = 'lightgrey'
+			
+			// Adicionei um event listener
+			h1.addEventListener('click',clicaTitulo)
+
+			function clicaTitulo(){	
+
+				if(div.style.height == '0px'){
+
+					div.style.height = '120px'
+					txtH1.style.bottom = '5px'
+					txtH1.style.backgroundColor = 'tomato'
+
+				} else {
+
+					div.style.height = '0px'
+					txtH1.style.bottom = '0px'
+					txtH1.style.backgroundColor = 'lightgrey'
+
+				}
+			}					
+		}
+
+	</script> -->
+
+	<script>
+
+	function javascript(){
+
+		// Puxei as Tags
+		let div = document.getElementById('menu')
+		let h1 = document.getElementById('titulo')
+		let txtH1 = document.getElementById('txt')
+
+		// Esconder o menu
+		// div.style.display = 'none'
+		div.style.height = '0px'
+		txtH1.style.bottom = '0px'
+		txtH1.style.backgroundColor = 'lightgrey'
+			
+		// Adicionei um event listener
+		h1.addEventListener('click',clicaTitulo)
+
+		function clicaTitulo(){
+
+			if(div.style.height == '0px'){
+
+				div.style.height = '120px'
+				txtH1.style.bottom = '5px'
+				txtH1.style.backgroundColor = 'tomato'
+
+			} else {
+
+				div.style.height = '0px'
+				txtH1.style.bottom = '0px'
+				txtH1.style.backgroundColor = 'lightgrey'
+
+			}
+		}
+
+	}	
+
+	</script>
+
+</head>
+<body onload="javascript()">
+	
+	<h1 id="titulo">
+		
+		<div id="txt">Menu</div>
+
+	</h1>
+	<div id="menu">
+		<ul>
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+			<li>Menu 4</li>
+			<li>Menu 5</li>
+		</ul>
+	</div>
+
+</body>
+</html>

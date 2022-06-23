@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1,div{
+			padding:10px;
+			width:200px;
+			margin:auto;
+			border:1px solid;
+			text-align:center;
+		}
+		h1{
+			cursor:pointer;
+		}
+		div{
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1 id="titulo"> Menu </h1>
+	<div id="menu">
+		<ul>
+			<li>Menu</li>
+			<li>Menu</li>
+			<li>Menu</li>
+			<li>Menu</li>
+			<li>Menu</li>
+		</ul>
+	</div>
+
+	<script>
+
+		// ESCUTADORES DE EVENTOS ( nome evento, funcao )
+
+		// EventListener -> EVENT(EVENTO) + LISTENER(ESCUTADOR)
+		
+		let div = document.getElementById('menu')
+		let h1 = document.getElementById('titulo')
+		
+		h1.addEventListener('click',clicaTitulo)
+		// ADICIONE - ADD
+		// ESCUTADOR - LISTENER
+		// EVENTO - EVENT
+
+			// 1 arg -> STRING COM O NOME DO EVENTO
+			// 2 arg -> NOME DA FUNCAO SEM PARENTESES
+
+		// Objetos
+			// Propriedades (variavel)
+			// Métodos (funções)
+
+		function clicaTitulo(){
+			
+			// h1.style.backgroundColor = 'tomato'
+
+			div.style.display = 'block'
+			// block
+			// inline-block
+			// none
+
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	
+	<h1 id="tituloPrincipal" class="titulo"> Titulo </h1>
+
+	<h2 id="titulo2" class="titulo">Titulo 2</h2>
+
+	<h3 class="titulo">Titulo 3</h3>
+
+	<p>Parag 1</p>
+	<p>Parag 2</p>
+	<p>Parag 3</p>
+	<p>Parag 4</p>
+
+	<script>
+		
+		let h1 = document.getElementById('tituloPrincipal')
+
+		h1.innerText = 'Novo Valor para InnerText'
+
+		h1.style.border = '1px solid black'
+		h1.style.padding = '20px'
+
+		h1.style.width = '400px'
+
+		h1.style.fontSize = '20px'
+		h1.style.textAlign = 'center'
+
+		h1.style.borderRadius = '10px'
+
+		h1.style.backgroundColor = 'tomato'
+		h1.style.color = 'white'
+
+		// border-radius
+		// borderRadius
+
+		// font-family
+		// fontFamily
+
+		let h2 = document.getElementById('titulo2') // coleção de 4 posições
+
+		h2.style.color = 'white'
+		h2.style.padding = '10px'
+
+		function corVermelha(){
+			h2.style.backgroundColor = 'red'
+
+		}
+
+		function corAzul(){
+			h2.style.backgroundColor = 'blue'
+
+		}
+
+	</script>
+
+	<button onclick="corVermelha()">Vermelho</button>
+
+	<button onclick="corAzul()">Azul</button>
+
+</body>
+</html>
