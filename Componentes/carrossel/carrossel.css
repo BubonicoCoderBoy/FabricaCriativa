@@ -1,0 +1,42 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+.carrossel{
+	width: 300px; /*-------*/
+	height: 150px; /*-------*/
+	overflow: hidden;
+	position:relative; /*-------*/
+}
+
+.banner{
+	display: flex;
+	position:absolute; /*-------*/
+	left:0px;
+
+	transition-property: left;
+	transition-duration: 1s;
+}
+
+.menuBotoes{
+	opacity: 0.6;
+	width: calc(100% - 20px);
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px;
+	position:absolute; /*-------*/
+	top:40%;
+}
+
+.carrossel img{
+	width: 300px;
+}
+
+.carrossel button{
+	padding: 5px;
+	border-radius: 20px;
+	border:1px solid grey;
+	cursor: pointer;
+}

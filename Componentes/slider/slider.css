@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.slider{
+	width: 350px;
+	position: absolute;
+	overflow: hidden;
+	border: 1px solid grey;
+	border-radius: 5px;
+	height: auto;
+
+	transition-property: height;
+	/* ESPECIFICANDO TRANSICIONAR ALTURA  */
+	transition-duration: 0.3s;
+	/* ESPECIFICA TEMPO TRANSIÇÃO */
+
+}
+
+.botaoSlider{
+	width: 100%;
+	line-height: 50px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.slider li{
+	border-bottom: 1px solid grey;
+	padding: 10px;
+}
+
+.slider li:hover{
+	background-color: lightgrey;
+}
+
+.slider ul{
+	/*list-style-position: inside;*/
+	list-style: none;
+	background-color: white;
+}
